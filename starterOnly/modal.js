@@ -159,7 +159,7 @@ l' id " email" */
 
   console.log(count);
   /* c'est la l'element input qu'il faut rechercher car c'est lui qui recoit la saisi !!! et  */
-  /* Voir si on doit mettre juste == ou ==== ???????? */
+
 
   //--------------------------------
   // VALIDATION DU FORMULAIRE GLOBAL

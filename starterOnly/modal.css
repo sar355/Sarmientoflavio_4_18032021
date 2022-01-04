@@ -34,12 +34,28 @@ img {
   overflow: hidden;
   margin: 3.5%;
 }
+
+/* Rajout selon screens modèle FS */
+@media screen and (max-width: 800px) {
+  .topnav {
+    margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+.header-logo  img {
+
+ width: 140px;
+}
+  }
+
 .header-logo {
   float: left;
 }
+
 .main-navbar {
   float: right;
 }
+
 .topnav a {
   float: left;
   display: block;
@@ -56,6 +72,11 @@ img {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
+}
+
+/* Rajout selon screens modèles FS */
+.topnav a:hover span {
+  border-bottom: 1px solid #ffffff;
 }
 
 .topnav a.active {
@@ -75,6 +96,14 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  /* Rajout corrections FS */
+  .topnav .icon {
+    color: red;
+  }
+
+  .topnav .header-logo{
+    margin-top: 10px;
   }
 }
 
@@ -101,7 +130,10 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    /* margin-top: -15px; */
+    /* Rajout corrections FS
+    ligne ci-dessus remplacée par code ci-dessous */
+    margin-top: 0px;
   }
 }
 
@@ -489,6 +521,10 @@ footer {
     background: #fff;
     color: #000;
     padding: 20px;
+    /* Rajout selon screens modèles FS */
+    min-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .hero-content::after {
     content: unset;
@@ -497,16 +533,20 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 2.5rem;
-    /* 4.5 old */
+    font-size: 2.3rem;
+    /* Rajout correction selon screens modèles */
+    /* 1 tentative 2.5rem */
+    /*  4.5 old */
     white-space: normal;
   }
   .hero-text {
     width: unset;
-    font-size: 1.5rem;
-    /* overflow:;
-    word-wrap:; */
+    /* font-size: 1.5rem; */
+  /* Rajout correction selon screens modèles.
+  Ci-dessus anciennne taille remplacée par ci-dessous. */
+  font-size: 1.2rem;
   }
+  
   .hero-img img {
     border-radius: 10px;
     margin-top: 40px;
@@ -541,7 +581,7 @@ footer {
 #emailErreur {
   color: red;
   font-size: 15px;
-} 
+}
 
 #closeFormulaire {
   width: 30px;
